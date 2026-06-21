@@ -7,15 +7,15 @@ set -eu
 CROSS_COMPILE_TRIPLET='x86_64-apple-darwin'
 CROSS_COMPILE_SYSTEM='darwin'
 CROSS_COMPILE_ARCHITECTURE='x86_64'
-CROSS_COMPILE_SYSROOT='/tmp/darwin-clang-cross/SDK/MacOSX11.3.sdk'
+CROSS_COMPILE_SYSROOT='/tmp/darwin-clang-cross/SDK/MacOSX15.sdk'
 
 CMAKE_TOOLCHAIN_FILE='/tmp/darwin-clang-cross/build/cmake/x86_64h-unknown-apple-darwin.cmake'
 
-CC='/tmp/darwin-clang-cross/bin/x86_64h-apple-darwin20.4-clang'
-CXX='/tmp/darwin-clang-cross/bin/x86_64h-apple-darwin20.4-clang++'
+CC='/tmp/darwin-clang-cross/bin/x86_64h-apple-darwin24-clang'
+CXX='/tmp/darwin-clang-cross/bin/x86_64h-apple-darwin24-clang++'
 AR='/usr/bin/llvm-ar'
 AS='/usr/bin/llvm-as'
-LD='/tmp/darwin-clang-cross/bin/x86_64h-apple-darwin20.4-ld'
+LD='/tmp/darwin-clang-cross/bin/x86_64h-apple-darwin24-ld'
 NM='/usr/bin/llvm-nm'
 RANLIB='/usr/bin/llvm-ranlib'
 STRIP='/usr/bin/llvm-strip'
@@ -23,7 +23,7 @@ OBJCOPY='/usr/bin/llvm-objcopy'
 OBJDUMP='/usr/bin/llvm-objdump'
 READELF='/usr/bin/llvm-readelf'
 
-MACOSX_DEPLOYMENT_TARGET='11.3'
+MACOSX_DEPLOYMENT_TARGET='15.0'
 
 export \
 	CROSS_COMPILE_TRIPLET \

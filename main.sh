@@ -41,7 +41,7 @@ if [ "${1}" = 'build' ]; then
 	cd 'osxcross'
 	
 	wget \
-		'https://github.com/phracker/MacOSX-SDKs/releases/download/11.3/MacOSX11.3.sdk.tar.xz' \
+		'https://github.com/AmanoTeam/darwin-clang-cross/releases/download/rolling/MacOSX15.sdk.tar.xz' \
 		--directory-prefix="${PWD}/tarballs"
 	
 	TARGET_DIR='/tmp/darwin-clang-cross' UNATTENDED='1' ./build.sh
